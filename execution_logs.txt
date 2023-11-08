@@ -1,0 +1,313 @@
+==========================================================================================================================================
+****Server Output:
+
+QA_Auto@Venkomputer:~/faculdade/redes2/data_stream_service$ python3 server.py 
+Got connection request from ('127.0.0.1', 7444) with message b'Hello'. Creating a new thread...
+TOTAL CLIENTS  1
+
+Got connection request from ('127.0.0.1', 7555) with message b'Hello'. Creating a new thread...
+TOTAL CLIENTS  2
+
+Got connection request from ('127.0.0.1', 7666) with message b'Hello'. Creating a new thread...
+TOTAL CLIENTS  3
+
+Received b'bye' message from ('127.0.0.1', 7666)
+ ('127.0.0.1', 7666) Closed connection to the server...
+Finishing thread...
+TOTAL CLIENTS  2
+
+Received b'bye' message from ('127.0.0.1', 7444)
+('127.0.0.1', 7444) Closed connection to the server...
+Finishing thread...
+TOTAL CLIENTS  1
+
+Received b'bye' message from ('127.0.0.1', 7555)
+('127.0.0.1', 7555) Closed connection to the server...
+Finishing thread...
+TOTAL CLIENTS  0
+
+==========================================================================================================================================
+****Client-1 output:
+
+Sending Hello message...
+
+### Start to transmit music lines
+
+Psychic spies from China
+
+Try to steal your mind's elation
+
+And little girls from Sweden
+
+Dream of silver-screen quotation
+
+And if you want these kind of dreams
+
+It's Californication
+
+
+
+It's the edge of the world
+
+And all of Western civilization
+
+The Sun may rise in the East
+
+At least it settled in a final location
+
+It's understood that Hollywood sells Californication
+
+
+
+Pay your surgeon very well
+
+To break the spell of aging
+
+Celebrity skin: Is this your chin
+
+Or is that war you're waging?
+
+
+
+First born unicorn
+
+Hardcore soft porn
+
+
+
+Dream of Californication
+
+Dream of Californication
+
+
+
+Marry me, girl, be my fairy to the world
+
+Be my very own constellation
+
+A teenage bride with a baby inside
+
+Getting high on information
+
+And buy me a star on the boulevard
+
+It's Californication
+
+
+
+Space may be the final frontier
+
+But it's made in a Hollywood basement
+
+And, Cobain, can you hear the spheres
+
+Singing songs off Station to Station?
+
+And Alderaan's not far away
+
+It's Californication
+
+
+
+Born and raised by those who praise
+
+Control of population
+
+Well, everybody's been there
+
+And I don't mean on vacation
+
+
+
+First born unicorn
+
+Hardcore soft porn
+
+
+
+Dream of Californication
+
+Dream of Californication
+
+Dream of Californication
+
+Dream of Californication
+
+
+
+Destruction leads to a very rough road
+
+But it also breeds creation
+
+And earthquakes are to a girl's guitar
+
+They're just another good vibration
+
+And tidal waves couldn't save the world
+
+From Californication
+
+
+
+Pay your surgeon very well
+
+To break the spell of aging
+
+### After user press "q" key:
+
+Sending bye message...
+Closing connection to the server...
+Total Out of Order Packets received: 0
+Total lost packages count: 0
+
+==========================================================================================================================================
+****Client-2 output:
+
+Sending Hello message...
+
+### Start to transmit music lines
+
+Try to steal your mind's elation
+
+And little girls from Sweden
+
+Dream of silver-screen quotation
+
+And if you want these kind of dreams
+
+It's Californication
+
+
+
+It's the edge of the world
+
+And all of Western civilization
+
+The Sun may rise in the East
+
+At least it settled in a final location
+
+It's understood that Hollywood sells Californication
+
+
+
+Pay your surgeon very well
+
+To break the spell of aging
+
+Celebrity skin: Is this your chin
+
+Or is that war you're waging?
+
+
+
+First born unicorn
+
+Hardcore soft porn
+
+
+
+Dream of Californication
+
+Dream of Californication
+
+
+
+Marry me, girl, be my fairy to the world
+
+Be my very own constellation
+
+A teenage bride with a baby inside
+
+Getting high on information
+
+And buy me a star on the boulevard
+
+It's Californication
+
+
+
+Space may be the final frontier
+
+But it's made in a Hollywood basement
+
+And, Cobain, can you hear the spheres
+
+Singing songs off Station to Station?
+
+And Alderaan's not far away
+
+It's Californication
+
+
+
+Born and raised by those who praise
+
+Control of population
+
+Well, everybody's been there
+
+And I don't mean on vacation
+
+
+
+First born unicorn
+
+Hardcore soft porn
+
+
+
+Dream of Californication
+
+Dream of Californication
+
+Dream of Californication
+
+Dream of Californication
+
+
+
+Destruction leads to a very rough road
+
+But it also breeds creation
+
+And earthquakes are to a girl's guitar
+
+They're just another good vibration
+
+And tidal waves couldn't save the world
+
+From Californication
+
+
+
+Pay your surgeon very well
+
+To break the spell of aging
+
+Sicker than the rest, there is no test
+
+But this is what you're craving
+
+### After user press "q" key:
+
+Sending bye message...
+Closing connection to the server...
+Total Out of Order Packets received: 0
+Total lost packages count: 0
+
+==========================================================================================================================================
+****Client-3 output:
+
+sending Hello message...
+
+### After user press "space-bar" key:
+
+Now playing Californication from Red Hot Chili Peppers
+
+### After user press "q" key:
+
+Sending bye message...
+Closing connection to the server...
+Total Out of Order Packets received: 0
+Total lost packages count: 0
