@@ -40,6 +40,7 @@ except:
     print('Erro: Porta expecificada já em uso, por favor informe outra.')
     exit(1)
 
+print("Sending Hello message...")
 sock.sendto(b'Hello', dest)
 thread = threading.Thread(target=check_input, args=())
 thread.start()

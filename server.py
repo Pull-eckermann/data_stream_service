@@ -24,7 +24,7 @@ def getMessage():
 
 # Thread that will handle a single Client will run this function
 def comunica_cliente(client_addr, data):
-    seq = 0 # Sequence number of messages
+    seq = 0 # Sequence number of the messages
     while True:
         # If the client closed the connection
         if str(client_addr) in RUNF and RUNF[str(client_addr)]:
@@ -36,6 +36,8 @@ def comunica_cliente(client_addr, data):
         #sock.sendto(msg.encode(), client_addr)
         sleep(sleep_interval)
     print("{} Closed connection to the server...".format(client_addr))
+    print("Finishing thread...")
+    print("TOTAL CLIENTS ",threading.active_count()-2)
 
 # ===================== Start code =====================
 RUNF = {}
@@ -74,14 +76,15 @@ while True:
     
     # If one of the clients want to close the connection 
     if data == b'bye':
+        print("Received {} message from {}".format(data, client_addr))
         RUNF[str(client_addr)] = True
     # A new client desires to start a connection with the server
     elif data == b'Hello':
-        print('Got request from: {} {}'.format(client_addr, data))
+        print('Got connection request from {} with message {}. Creating a new thread...'.format(client_addr, data))
         thread = threading.Thread(target=comunica_cliente, args=(client_addr, data))
         thread.start()
+        print("TOTAL CLIENTS ",threading.active_count()-2)
 
-    print("TOTAL CLIENTS ",threading.active_count()-2, end='\r')
     sleep(0.1)
 
 print("Closing server...")
